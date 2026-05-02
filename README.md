@@ -9,8 +9,7 @@ Unlike SAV or Convex-Splitting methods, the Biharmonic-Modified (BHM) scheme avo
  double-precision simulations on 24GB GPUs where other methods would typically trigger VRAM overflow.
 
 Companion code for:
-Orizaga et al. (2026), *Computers and Mathematics 
-with Applications* (under review).
+Orizaga et al. (2026), *Mathematics and Computers in Simulation (MACS)* (under review).
 
 ## Requirements
 - MATLAB 2026a with Parallel Computing Toolbox
@@ -49,7 +48,7 @@ If you use this code, please cite:
 
 Orizaga, S., Fabien, M., Gonzalez-Parra, G., Owusu, S. (2026).
 “A Memory-Efficient Biharmonic-Modified Scheme for Large-Scale 3D Phase-Field Simulations up to 512^3 on Consumer GPUs.”
-Manuscript submitted to Computers & Mathematics with Applications.
+Manuscript submitted to Mathematics and Computers in Simulation (MACS).
 
 Code available at:
 https://github.com/sauloorizaga/BCP-BHM-Blackwell-2026
