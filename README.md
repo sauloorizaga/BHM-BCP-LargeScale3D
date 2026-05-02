@@ -47,7 +47,7 @@ will generate the following plot ($\alpha$ = 20 and .25 volume fraction)
 If you use this code, please cite:
 
 Orizaga, S., Fabien, M., Gonzalez-Parra, G., Owusu, S. (2026).
-“A Memory-Efficient Biharmonic-Modified Scheme for Large-Scale 3D Phase-Field Simulations up to 512^3 on Consumer GPUs.”
+“A Simple Semi-Implicit Energy-Stable Biharmonic-Modified Scheme for Large-Scale 3D Block Copolymer Simulation on Consumer GPUs”
 Manuscript submitted to Mathematics and Computers in Simulation (MACS).
 
 Code available at:
