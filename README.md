@@ -6,7 +6,7 @@ First benchmark of 512³ 3D phase-field simulations  on consumer NVIDIA Blackwel
 
 # Why BHM?
 Unlike SAV or Convex-Splitting methods, the Biharmonic-Modified (BHM) scheme avoids system enlargement and auxiliary variables. This linear, single-solve structure is essential for memory-dominated regimes, enabling 
- double-precision simulations on 24GB GPUs where other methods would typically trigger VRAM overflow.
+double-precision simulations on 24GB GPUs where other methods would typically trigger VRAM overflow.
 
 Companion code for:
 Orizaga et al. (2026), *Computer Physics Communications* (under review).
@@ -46,9 +46,9 @@ will generate the following plot ($\alpha$ = 20 and .25 volume fraction)
 
 If you use this code, please cite:
 
-Orizaga, S., Fabien, M., Gonzalez-Parra, G., Owusu, S. (2026).
+Orizaga, Gonzalez-Parra, G., S., Fabien, M.,  Owusu, S. (2026).
 “A Semi-Implicit Energy-Stable Biharmonic-Modified Scheme for Large-Scale 3D Block Copolymer Simulation on Consumer GPUs”
-Manuscript submitted to Computer Physics Communication (CPC).
+Manuscript submitted to Computer Physics Communications (CPC).
 
 Code available at:
 https://github.com/sauloorizaga/BCP-BHM-Blackwell-2026
