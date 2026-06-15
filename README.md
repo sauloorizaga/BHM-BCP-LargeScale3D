@@ -46,7 +46,7 @@ will generate the following plot ($\alpha$ = 20 and .25 volume fraction)
 
 If you use this code, please cite:
 
-Orizaga, Gonzalez-Parra, G., S., Fabien, M.,  Owusu, S. (2026).
+Orizaga,  S. Gonzalez-Parra, G., Fabien, M.,  Owusu, S. (2026).
 “A Semi-Implicit Energy-Stable Biharmonic-Modified Scheme for Large-Scale 3D Block Copolymer Simulation on Consumer GPUs”
 Manuscript submitted to Computer Physics Communications (CPC).
 
