@@ -9,7 +9,7 @@ Unlike SAV or Convex-Splitting methods, the Biharmonic-Modified (BHM) scheme avo
  double-precision simulations on 24GB GPUs where other methods would typically trigger VRAM overflow.
 
 Companion code for:
-Orizaga et al. (2026), *Mathematics and Computers in Simulation (MACS)* (under review).
+Orizaga et al. (2026), *Computer Physics Communications* (under review).
 
 ## Requirements
 - MATLAB 2026a with Parallel Computing Toolbox
@@ -47,14 +47,14 @@ will generate the following plot ($\alpha$ = 20 and .25 volume fraction)
 If you use this code, please cite:
 
 Orizaga, S., Fabien, M., Gonzalez-Parra, G., Owusu, S. (2026).
-“A Simple Semi-Implicit Energy-Stable Biharmonic-Modified Scheme for Large-Scale 3D Block Copolymer Simulation on Consumer GPUs”
-Manuscript submitted to Mathematics and Computers in Simulation (MACS).
+“A Semi-Implicit Energy-Stable Biharmonic-Modified Scheme for Large-Scale 3D Block Copolymer Simulation on Consumer GPUs”
+Manuscript submitted to Computer Physics Communication (CPC).
 
 Code available at:
 https://github.com/sauloorizaga/BCP-BHM-Blackwell-2026
 
 ### Historical Note:
-The BHM methodology was originally developed to resolve the numerical challenges of variable-mobility Cahn-Hilliard equations. However, our research [[Orizaga & Witelski, 2024]](https://www.sciencedirect.com/science/article/pii/S0927025624003665) demonstrated that the scheme provides superior memory efficiency even for constant-mobility systems. This work extends that benefit to the 3D Block Copolymer (BCP) model, leveraging the scheme's minimal memory footprint to break the barrier on consumer GPUs.
+The BHM methodology was originally developed to resolve the numerical challenges of variable-mobility Cahn-Hilliard equations. However, our research [[Orizaga & Witelski, 2024]](https://www.sciencedirect.com/science/article/pii/S0927025624003665) demonstrated that the scheme provides superior memory efficiency even for constant-mobility systems. This work extends that benefit to the 3D Block Copolymer (BCP) model, leveraging the scheme's minimal memory footprint to break the 512^3 barrier on consumer GPUs.
  
 ## Contact
 We welcome questions, feedback, and potential collaboration opportunities—feel free to reach out! <br>
