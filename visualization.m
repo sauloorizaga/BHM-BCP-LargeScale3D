@@ -3,7 +3,7 @@ tic;
 N=128;        %user changes the N value here
 M1=5;tfinal=10;dt = 0.01; 
 a=0;b=2*pi;
-CH3D_GPU_project_2026_BCP(dt,M1,tfinal,N)
+CH3D_GPU_project_2026_BCP(dt,M1,tfinal,N)    %comment out regular or nested
 %CH3D_GPU_project_2026_Nested(dt,M1,tfinal,N) 
 
 h=(b-a)/N;
@@ -26,6 +26,5 @@ axis([a b a b a b])
 title(['Time = ' num2str(tfinal)] ); 
 
 a=toc;
-minutes=a/60;
-hours=a/60^2;
+minutes=a/60;hours=a/60^2;
 minutes_hours=[minutes hours]
