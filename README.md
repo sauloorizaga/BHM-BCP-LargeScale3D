@@ -26,10 +26,10 @@ CH3D_GPU_project_2026_BCP(dt, M1, iter, tfinal, N)
 dt=0.01; M1=7.5; tfinal=100; N=256;
 ```
 ## Output
-Running the codes: **CH3D_GPU_project_2026_BCP.m** followed by **visualization.m** <br>
-will generate the following plot ($\alpha$ =35 and .39 volume fraction)
+Running the code: **BCP3D_Dynamics.m** <br>
+will generate the following plot ($\alpha$ =15 and 0.17 volume fraction)
 
-<img src="512 tf10.png" width=400px height=400px> <img src="512 tf10_2.png" width=400px height=400px>
+<img src="BCP3D_snap4_ubar17_N256.png" width=400px height=400px> <img src="BCP3D_energy_ubar17_N256.png" width=400px height=400px>
 
 ## Output
 Running the codes: **CH3D_GPU_project_2026_Nested.m** followed by **visualization.m** <br>
