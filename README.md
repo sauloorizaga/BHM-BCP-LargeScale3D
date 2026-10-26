@@ -13,9 +13,8 @@ Companion code for: Orizaga et al. (2026), *Engineering With Computers - Springe
 - GPU memory: about 12 GB for N = 512³ in double precision; smaller grids (64³–256³) run on GPUs with 6 GB or less
 
 ## Contents
-- `CH3D_GPU_project_2026_BCP.m`: Main BCP simulation (good up to $N=256$)
--  `CH3D_GPU_project_2026_Nested.m`: Main BCP simulation (nested $N=512$)
-- `visualization.m` : Isosurface and cross-section plots
+- `BCP3D_Dynamics.m`: Main BCP simulation (good up to $N=256$)
+
 
 ## Usage
 ```matlab
