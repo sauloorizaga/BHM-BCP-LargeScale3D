@@ -1,15 +1,12 @@
 # 3D Phase-Field Simulations : 512^3 via GPU on a Laptop
 
-# BCP-BHM-Blackwell-2026
-First benchmark of 512³ 3D phase-field simulations  on consumer NVIDIA Blackwell GPUs via the BHM scheme  in MATLAB 2026a.  
-
+# BHM-BCP-LargeScale3D
+Companion code for an efficient computational framework for large-scale 3D block copolymer (BCP) simulations with the Biharmonic-Modified (BHM) scheme in MATLAB. The repository includes the production solver, the convergence studies in time and space, a controlled comparison with convex splitting (CS) and scalar auxiliary variable (SAV) methods, CPU and GPU benchmarks, a single- versus double-precision study, and long-time simulations at N = 512³ in double precision on a single laptop GPU.
 
 # Why BHM?
-Unlike SAV or Convex-Splitting methods, the Biharmonic-Modified (BHM) scheme avoids system enlargement and auxiliary variables. This linear, single-solve structure is essential for memory-dominated regimes, enabling 
-double-precision simulations on 24GB GPUs where other methods would typically trigger VRAM overflow.
-
+BHM is a linear, semi-implicit scheme that requires neither a convex–concave splitting of the energy nor an auxiliary variable. With a Fourier pseudo-spectral discretization, each time step costs one forward and one inverse FFT, and the free energy is evaluated through Parseval's identity at no additional FFT cost. In our comparison, BHM attains the accuracy of SAV at the computational cost of CS, and the nested implementation runs a 512³ double-precision simulation with a peak GPU memory of about 11.2 GiB.
 Companion code for:
-Orizaga et al. (2026), *Computer Physics Communications* (under review).
+Orizaga et al. (2026), *Engineering With Computers - Springer* (under review).
 
 ## Requirements
 - MATLAB 2026a with Parallel Computing Toolbox
