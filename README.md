@@ -5,13 +5,12 @@ Companion code for an efficient computational framework for large-scale 3D block
 
 # Why BHM?
 BHM is a linear, semi-implicit scheme that requires neither a convex–concave splitting of the energy nor an auxiliary variable. With a Fourier pseudo-spectral discretization, each time step costs one forward and one inverse FFT, and the free energy is evaluated through Parseval's identity at no additional FFT cost. In our comparison, BHM attains the accuracy of SAV at the computational cost of CS, and the nested implementation runs a 512³ double-precision simulation with a peak GPU memory of about 11.2 GiB.
-Companion code for:
-Orizaga et al. (2026), *Engineering With Computers - Springer* (under review).
+Companion code for: Orizaga et al. (2026), *Engineering With Computers - Springer* (under review).
 
 ## Requirements
-- MATLAB 2026a with Parallel Computing Toolbox
-- NVIDIA GPU (RTX 5090 recommended)
-- 24GB VRAM for N=512³ simulations
+- MATLAB with the Parallel Computing Toolbox (tested with R2021a and R2026a; recent NVIDIA GPUs such as the RTX 50 series require R2026a)
+- An NVIDIA GPU with CUDA support
+- GPU memory: about 12 GB for N = 512³ in double precision; smaller grids (64³–256³) run on GPUs with 6 GB or less
 
 ## Contents
 - `CH3D_GPU_project_2026_BCP.m`: Main BCP simulation (good up to $N=256$)
@@ -44,12 +43,11 @@ will generate the following plot ($\alpha$ = 20 and .25 volume fraction)
 If you use this code, please cite:
 
 Orizaga,  S. Gonzalez-Parra, G., Fabien, M.,  Owusu, S. (2026).
-“A Semi-Implicit Energy-Stable Biharmonic-Modified Scheme for Large-Scale 3D Block Copolymer Simulation on Consumer GPUs”
-Manuscript submitted to Computer Physics Communications (CPC).
+“An Efficient Computational Framework for Large-Scale Three-Dimensional Block Copolymer Simulations”
+Manuscript submitted to Engineering with Computers - Springer.
 
 Code available at:
-https://github.com/sauloorizaga/BCP-BHM-Blackwell-2026
-
+https://github.com/sauloorizaga/BHM-BCP-LargeScale3D/
 ### Historical Note:
 The BHM methodology was originally developed to resolve the numerical challenges of variable-mobility Cahn-Hilliard equations. However, our research [[Orizaga & Witelski, 2024]](https://www.sciencedirect.com/science/article/pii/S0927025624003665) demonstrated that the scheme provides superior memory efficiency even for constant-mobility systems. This work extends that benefit to the 3D Block Copolymer (BCP) model, leveraging the scheme's minimal memory footprint to break the 512^3 barrier on consumer GPUs.
  
