@@ -32,7 +32,7 @@ dt=0.01; M1=7.5; tfinal=100; N=256;
 ```
 ## Output
 Running the code: **BCP3D_Dynamics.m** <br>
-will generate the following plot ($\alpha$ =15 and ubar = 0.00 volume fraction)
+will generate the following plot ($\alpha$ =15 and ubar = 0.17 volume fraction)
 
 <img src="BCP3D_snap4_ubar17_N256.png" width=400px height=400px> <img src="BCP3D_energy_ubar17_N256.png" width=400px height=400px>
 
@@ -40,7 +40,7 @@ will generate the following plot ($\alpha$ =15 and ubar = 0.00 volume fraction)
 Running the code: **BCP3D_Dynamics.m** <br>
 will generate the following plot ($\alpha$ = 15 and ubar = 0.42 volume fraction)
 
-<img src="512 tf10a.png" width=400px height=400px> <img src="512 tf10b.png" width=400px height=400px>
+<img src="BCP3D_snap2_ubar42_N512.png" width=400px height=400px> <img src="BCP3D_energy_ubar42_N512.png" width=400px height=400px>
 
 
 ## Citation
