@@ -34,7 +34,7 @@ dt=0.01; M1=1; tfinal=100; N=256; ubar=.30;
 Running the code: **BCP3D_Dynamics.m** <br>
 will generate the following plot ($\alpha$ =15 and ubar = 0.17 volume fraction)
 
-<img src="BCP3D_snap4_ubar17_N256.png" width=400px height=400px> <img src="BCP3D_energy_ubar17_N256.png" width=400px height=400px>
+<img src="BCP3D_snap2_ubar17_N512.png" width=400px height=400px> <img src="BCP3D_energy_ubar17_N512.png" width=400px height=400px>
 
 ## Output
 Running the code: **BCP3D_Dynamics.m** <br>
