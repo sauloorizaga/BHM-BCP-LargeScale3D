@@ -54,7 +54,7 @@ Manuscript submitted to Engineering with Computers - Springer.
 Code available at:
 https://github.com/sauloorizaga/BHM-BCP-LargeScale3D/
 ### Historical Note:
-The BHM methodology was originally developed to resolve the numerical challenges of variable-mobility Cahn-Hilliard equations. However, our research [[Orizaga & Witelski, 2024]](https://www.sciencedirect.com/science/article/pii/S0927025624003665) demonstrated that the scheme provides superior memory efficiency even for constant-mobility systems. This work extends that benefit to the 3D Block Copolymer (BCP) model, leveraging the scheme's minimal memory footprint to break the 512^3 barrier on consumer GPUs.
+The BHM methodology was originally developed for variable-mobility fourth-order equations, which we studied for thin-film and variable-mobility Cahn–Hilliard equations [[Orizaga & Witelski, 2024]](https://www.sciencedirect.com/science/article/pii/S0927025624003665). During that work, we observed that BHM is also highly efficient for constant-mobility problems. This work builds on that observation for the 3D Block Copolymer (BCP) model, with a fully spectral, memory-efficient implementation that enables 512³ double-precision simulations on a single laptop GPU.
  
 ## Contact
 We welcome questions, feedback, and potential collaboration opportunities—feel free to reach out! <br>
