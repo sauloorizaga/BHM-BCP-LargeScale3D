@@ -13,7 +13,13 @@ Companion code for: Orizaga et al. (2026), *Engineering With Computers - Springe
 - GPU memory: about 12 GB for N = 512³ in double precision; smaller grids (64³–256³) run on GPUs with 6 GB or less
 
 ## Contents
-- `BCP3D_Dynamics.m`: Main BCP simulation (good up to $N=256$)
+- `BCP3D_Dynamics.m`: Main BCP simulation with energy diagnostics (isosurfaces, free energy, and relative energy rate). The largest grid depends on the GPU memory: about 12 GB for N = 512³ in double precision, and much less for N ≤ 256³.
+- `NewBenchmark_BCP3D.m`: CPU and GPU benchmark (N = 64³, 128³, 256³; 10,000 time steps).
+- `SingleVsDouble_BCP3D_Revised.m`: Single- versus double-precision comparison (mass drift and field difference).
+- `BCP2D_Spatial_Convergence.m`: Spatial convergence study.
+- `BCP2D_Scheme_Comparison.m`: Accuracy comparison of BHM, CS, and SAV.
+- `BCP3D_Scheme_Cost.m`: Time and memory comparison of BHM, CS, and SAV in 3D.
+- `BCP3D_BHM_Regular_vs_Nested.m`: Memory comparison of the regular and nested BHM implementations.
 
 
 ## Usage
@@ -26,13 +32,13 @@ dt=0.01; M1=7.5; tfinal=100; N=256;
 ```
 ## Output
 Running the code: **BCP3D_Dynamics.m** <br>
-will generate the following plot ($\alpha$ =15 and 0.17 volume fraction)
+will generate the following plot ($\alpha$ =15 and ubar = 0.00 volume fraction)
 
 <img src="BCP3D_snap4_ubar17_N256.png" width=400px height=400px> <img src="BCP3D_energy_ubar17_N256.png" width=400px height=400px>
 
 ## Output
-Running the codes: **CH3D_GPU_project_2026_Nested.m** followed by **visualization.m** <br>
-will generate the following plot ($\alpha$ = 20 and .25 volume fraction)
+Running the code: **BCP3D_Dynamics.m** <br>
+will generate the following plot ($\alpha$ = 15 and ubar = 0.42 volume fraction)
 
 <img src="512 tf10a.png" width=400px height=400px> <img src="512 tf10b.png" width=400px height=400px>
 
