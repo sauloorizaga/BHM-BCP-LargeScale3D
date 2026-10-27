@@ -25,10 +25,10 @@ Companion code for: Orizaga et al. (2026), *Engineering With Computers - Springe
 ## Usage
 ```matlab
 % Run simulation
-CH3D_GPU_project_2026_BCP(dt, M1, iter, tfinal, N)
+BCP3D_Dynamics.m
 
 % Example parameters
-dt=0.01; M1=7.5; tfinal=100; N=256;
+dt=0.01; M1=1; tfinal=100; N=256; ubar=.30;
 ```
 ## Output
 Running the code: **BCP3D_Dynamics.m** <br>
