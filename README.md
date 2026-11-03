@@ -20,6 +20,9 @@ Companion code for: Orizaga et al. (2026), *Engineering With Computers - Springe
 - `BCP2D_Scheme_Comparison.m`: Accuracy comparison of BHM, CS, and SAV.
 - `BCP3D_Scheme_Cost.m`: Time and memory comparison of BHM, CS, and SAV in 3D.
 - `BCP3D_BHM_Regular_vs_Nested.m`: Memory comparison of the regular and nested BHM implementations.
+- `BHM_errors.m`: Temporal convergence study (errors and convergence rates of BHM).
+- `BCP3D_BHM_SAV_Energy.m`: Energy comparison of BHM and SAV in 3D.
+- `BHM_vs_SAV_timingBCP.m`: Timing comparison of BHM and SAV for the 2D BCP equation.
 
 
 ## Usage
@@ -47,9 +50,7 @@ will generate the following plot ($\alpha$ = 15 and ubar = 0.42 volume fraction)
 
 If you use this code, please cite:
 
-Orizaga,  S. Gonzalez-Parra, G., Fabien, M.,  Owusu, S. (2026).
-“An Efficient Computational Framework for Large-Scale Three-Dimensional Block Copolymer Simulations”
-Manuscript submitted to Engineering with Computers - Springer.
+Orizaga, S., Fabien, M., Owusu, S., Gonzalez-Parra, G. (2026). "An Efficient Computational Framework for Large-Scale Three-Dimensional Block Copolymer Simulations." Manuscript submitted to Engineering with Computers, Springer.
 
 Code available at:
 https://github.com/sauloorizaga/BHM-BCP-LargeScale3D/
